@@ -10,10 +10,10 @@
 	</div>
 	<div class='navbar-list'>
 		<li>
-			<a href="">Accueil</a>
+			<a href="{{ path('accueilpage')}}">Accueil</a>
 		</li>
 		<li>
-			<a href="">Contact</a>
+			<a href="{{ path('contactPage') }}">Contact</a>
 		</li>
 	</div>
 
@@ -28,5 +28,7 @@
 	</div>
 
 	<img class='loader' src="{{ asset('assets/logos/react.png') }}"/>
+	
+
 {% endblock %}
 {% block javascripts %}{% endblock %}

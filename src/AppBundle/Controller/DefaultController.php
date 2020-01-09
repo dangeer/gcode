@@ -19,7 +19,8 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-	 return $this->render('gcode/homepage.html.twig');
+        return $this->render('gcode/accueil.html.twig');
+	 //return $this->render('gcode/homepage.html.twig');
     }
     
     /**
@@ -27,5 +28,12 @@ class DefaultController extends Controller
      */
 	public function contact(Request $request){
         return $this->render('gcode/contactPage.html.twig');
+    }
+
+    /**
+     * @Route("/accueil", name="accueilpage")
+     */
+    public function accueil(Request $request){
+        return $this->render('gcode/accueil.html.twig');
     }
 }

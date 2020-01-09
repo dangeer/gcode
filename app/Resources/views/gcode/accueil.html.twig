@@ -1,0 +1,86 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+	<!--Carousel Wrapper-->
+	<div
+		id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+		<!--Indicators-->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-2" data-slide-to="1"></li>
+			<li data-target="#carousel-example-2" data-slide-to="2"></li>
+		</ol>
+		<!--/.Indicators-->
+		<!--Slides-->
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+				<div class="view">
+					<img class="d-block w-100" height="100px" style="margin-top: 80px; height: 500px" src="{{ asset('assets/images/background2.jpg') }}" alt="First slide">
+					<div class="mask rgba-black-lights"></div>
+				</div>
+				<div class="carousel-caption"  >
+					<h3 class="h3-responsive" >DEVELOPPEMENT D'APPLICATION</h3>
+					<p>Web et Mobile</p>
+				</div>
+			</div>
+			<div
+				class="carousel-item">
+				<!--Mask color-->
+				<div class="view">
+					<img class="d-block w-100" style="margin-top: 80px;height: 500px" src="{{ asset('assets/images/background12.jpg') }}" alt="Second slide">
+					<div class="mask rgba-black-strongs"></div>
+				</div>
+				<div class="carousel-caption">
+					<h3 class="h3-responsive">CREATION DE JEUX VIDEO</h3>
+					<p>Sur Android et PC</p>
+				</div>
+			</div>
+			<div
+				class="carousel-item">
+				<!--Mask color-->
+				<div class="view">
+					<img class="d-block w-100" style="margin-top: 80px;height: 500px" src="{{ asset('assets/images/background8.jpg') }}" alt="Third slide">
+					<div class="mask rgba-black-slights"></div>
+				</div>
+				<div class="carousel-caption">
+					<h3 class="h3-responsive">ELECTRONIQUE</h3>
+					<p>Domotique, Controle à distqnce</p>
+				</div>
+			</div>
+		</div>
+		<!--/.Slides-->
+		<!--Controls-->
+		<a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+		<!--/.Controls-->
+	</div>
+	<!--/.Carousel Wrapper-->
+	<div class="container-fluid">
+		<img id='logo' src="{{ asset('assets/logos/logo.png')}}"/>
+		<div class='list-contact'>
+			<li><img src="{{ asset('assets/logos/logo3.png')}}"/></li>
+			<li><img src="{{ asset('assets/logos/logo2.png')}}"/></li>
+			<li><img src="{{ asset('assets/logos/logo1.png')}}"/></li>
+		</div>
+		<div class='navbar-menu'>
+			<li>
+				<a>ACCUEIL</a>
+			</li>
+			<li>
+				<a>CONTACT</a>
+			</li>
+			<li>
+				<a>A PROPOS</a>
+			</li>
+		</div>
+	</div>
+	<div class="container"></div>
+
+{% endblock %}

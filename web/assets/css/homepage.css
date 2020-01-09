@@ -1,51 +1,101 @@
-#background {
-    margin-top: -10px;
-    height: 100vh;
-}
-
-.container-background {
-    position: relative;
-    text-align: center;
-}
-
-.navbar-list {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 999;
-}
-
-.navbar-list li {
-    display: inline;
-    list-style: none;
-}
-
-.navbar-list li a {
-    color: white
-}
-
-.list-images {
-    position: static;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0px;
-    width: 100%;
-    text-align: center;
-}
-
-.loader {
-    animation: rotation infinite 3s linear;
-    width: 5%;
-    position: absolute;
-    top: 10px;
-    left: 20px;
-}
-
-@keyframes rotation {
-    from {
-        transform: rotate(0Deg)
+    #background {
+        margin-top: -10px;
+        height: 100vh;
     }
-    to {
-        transform: rotate(360Deg)
+    
+    .container-background {
+        position: relative;
+        text-align: center;
     }
-}
+    
+    .navbar-list {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 999;
+    }
+    
+    .navbar-list li {
+        display: inline;
+        list-style: none;
+    }
+    
+    .navbar-list li a {
+        color: white
+    }
+    
+    .list-images {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .loader {
+        animation: rotation infinite 3s linear;
+        width: 5%;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+    
+    @keyframes rotation {
+        from {
+            transform: rotate(0Deg)
+        }
+        to {
+            transform: rotate(360Deg)
+        }
+    }
+    
+    .footer-list {
+        position: relative;
+        height: 200px;
+        width: 100vw;
+    }
+    
+    #logo {
+        position: absolute;
+        top: 10px;
+        width: 100px;
+    }
+    
+    .list-contact {
+        position: absolute;
+        top: 10px;
+        right: 30px;
+    }
+    
+    .list-contact li,
+    .navbar-menu li {
+        list-style: none;
+        display: inline;
+    }
+    
+    .list-contact li img {
+        width: 30px;
+    }
+    
+    .navbar-menu {
+        position: absolute;
+        top: 50px;
+        right: 30px
+    }
+    
+    .navbar-menu li a {
+        color: #6f7175 !important;
+        border: 0 none !important;
+        border-bottom: 2px solid transparent !important;
+        border-radius: 0;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 0;
+        margin: 0 0.5em;
+    }
+    
+    .carousel-caption {
+        margin-top: -100px;
+    }
