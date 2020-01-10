@@ -48,7 +48,7 @@ class DefaultController extends Controller
         $mailer = $this->get('mailer');
         $message = (new \Swift_Message('GCODE MAIL'))
             ->setFrom('etech.berthon@gmail.com')
-            ->setTo('berthondanger@gmai.com')
+            ->setTo('berthondanger@gmail.com')
             ->setBody(
                 $this->renderView(
                     'Emails/registration.html.twig',
