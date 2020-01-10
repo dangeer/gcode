@@ -42,22 +42,29 @@ class DefaultController extends Controller
     /**
      * @Route("/sendmail", name="sendmail")
      */
-    public function mailAction()
+    public function mailAction(Request $request)
     {
-        $name='Berthon';
+        $data=$request->request->all();
+        $name=$data['name'];
+        $sender=$data['email'];
         $mailer = $this->get('mailer');
+        if($sender!=""){
         $message = (new \Swift_Message('GCODE MAIL'))
             ->setFrom('etech.berthon@gmail.com')
-            ->setTo('berthondanger@gmail.com')
-            ->setBody(
-                $this->renderView(
-                    'Emails/registration.html.twig',
-                    ['name' => $name]
-                ),
-                'text/html'
-            );
+            ->setTo($sender)
+        ;
 
+        $logo = $message->embed(\Swift_Image::fromPath('assets/logos/logo.png'));
+        $message->setBody(
+            $this->renderView(
+                'Emails/registration.html.twig',
+                ['name' => $name, 'logo'=>$logo]
+            ),
+            'text/html'
+        );
+        
         $mailer->send($message);
+        }
 
         return $this->render('gcode/accueil.html.twig');
     }
