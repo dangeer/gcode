@@ -10,8 +10,11 @@ use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
-    public function test(){
-        return new Response("test");
+    /**
+     * @Route("/test", name="manitra")
+     */
+    public function indexAction(){
+        return new Response("manira");
     }
 
 }

@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Righteous|Roboto+Condensed|Pacifico&display=swap');
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lato';
+}
+
+.navbar-brand{
+    font-family: "Pacifico";
+    font-size: 35px;
+    color:lightcoral!important
+}
+.navbar{
+    background-color: rgba(255, 255, 255, 0.95);
+}
+.nav-link{
+    font-size: 16px;
+    color: black !important;
+    margin: 16px;
+    font-family: 'Roboto Condensed';
+}
+
+.nav-link:hover{
+    color: #00E8E8 !important;
+    cursor: pointer;
+}
+
+.menu-right-btn{
+    padding: 13px 46px;
+    margin-right: 4%;
+    background-color: white;
+    color: black
+  
+}
+.menu-right-btn:hover{
+    background-color: #00E8E8;
+}
+.site-content{
+    background-image: url('/assets/images/bg5.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+ 
+}
+.site-title, .site-content{
+    color: white;
+    font-family: "Righteous";
+}
+
+.site-title{
+    margin-top: 19%;
+    margin-bottom: 6%;
+    font-size: 80px;
+    color:#9DB320;
+    text-align: center;
+}
+.site-desc{
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    
+}
+.site-btn1{
+    margin-right: 20px;
+}
+.site-btn2{
+    margin-left: 20px;
+}
+.site-btn{
+    margin-bottom: 19%;
+}
+
+/*Section 1*/
+.section1 .heading-1{
+    margin-top: 8%;
+}
+
+.section1 .heading-2{
+    margin-bottom: 5%;
+    font-size: 39px;
+}
+
+.section1 .para-1{
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+
+.section1 .card-text, .para-1{
+    color: rgba(0, 0, 0, 0.59)
+}
+
+.section1{
+    margin-bottom: 8%;
+}
+
+/*section 2*/
+.section2 .container-fluid{
+    background-image: url('/assets/images/bg-6.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section2 .heading-1{
+    margin-top: 20%;
+    margin-bottom: 4%;
+    width: 80%;
+    font-family: "Righteous";
+   color: whitesmoke;
+}
+
+.section2 .para{
+    color: whitesmoke;
+    margin-bottom: 7%;
+}
+.section2 .btn{
+    margin-bottom: 15%;
+    width: 30%;
+    padding: 2% 5%;
+   
+}
+
+/*section 3*/
+.section3{
+    margin-top: 8%;
+}
+/*section 3*/
+.section4{
+    margin-top: 8%;
+
+}
+
+.section4 .row, .col-md-7, .col-md-5{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.section4 a{
+    color: lightseagreen;
+    size: 40px;
+}
+
+.section4 .para-1{
+    color: white;
+    margin-top: 8%;
+}
+
+
+@media screen and (max-width: 768px){
+    .section1 .card{
+        width: 14rem;
+    }
+    .section4 .col-md-7 img{
+        width: 350px;
+    }
+}

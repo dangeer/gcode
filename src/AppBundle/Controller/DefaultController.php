@@ -19,7 +19,7 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        return $this->render('gcode/accueil.html.twig');
+        return $this->render('fabien/home.html.twig');
         //return $this->render('gcode/homepage.html.twig');
     }
 

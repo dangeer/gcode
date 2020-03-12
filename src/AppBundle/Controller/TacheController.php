@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 class TacheController extends Controller
 {
     /**
-     * @Route("/tache/list", name="tache_list")
+     * @Route("/accueila", name="tache_list")
      */
     public function listAction(Request $request)
     {
