@@ -4,9 +4,9 @@
 parameters:
     database_host: remotemysql.com
     database_port: 3306
-    database_name: wF9Xg0m4Vt
-    database_user: wF9Xg0m4Vt
-    database_password: Ntq1zsQqJC
+    database_name: SmdbAY4Xtl
+    database_user: SmdbAY4Xtl
+    database_password: AWP1tehqQK
     # You should uncomment this if you want to use pdo_sqlite
     #database_path: '%kernel.project_dir%/var/data/data.sqlite'
 
