@@ -24,19 +24,26 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/contact", name="contactPage")
+     * @Route("/societe", name="societe")
      */
-    public function contact(Request $request)
+    public function societe(Request $request)
     {
-        return $this->render('gcode/contactPage.html.twig');
+        return $this->render('fabien/societe.html.twig');
     }
 
     /**
-     * @Route("/accueil", name="accueilpage")
+     * @Route("/prestation", name="prestation")
      */
-    public function accueil(Request $request)
+    public function prestation(Request $request)
     {
-        return $this->render('gcode/accueil.html.twig');
+        return $this->render('fabien/prestation.html.twig');
+    }
+    /**
+     * @Route("/contact", name="contact")
+     */
+    public function contact(Request $request)
+    {
+        return $this->render('fabien/contact.html.twig');
     }
 
     /**
@@ -45,11 +52,11 @@ class DefaultController extends Controller
     public function mailAction(Request $request)
     {
         $data=$request->request->all();
-        $name=$data['name'];
+        $name=$data['nom'];
         $sender=$data['email'];
         $mailer = $this->get('mailer');
         if($sender!=""){
-        $message = (new \Swift_Message('GCODE MAIL'))
+        $message = (new \Swift_Message('LAS 3D MAIL'))
             ->setFrom('etech.berthon@gmail.com')
             ->setTo($sender)
         ;
@@ -66,6 +73,13 @@ class DefaultController extends Controller
         $mailer->send($message);
         }
 
-        return $this->render('gcode/accueil.html.twig');
+        return $this->render('fabien/home.html.twig');
     }
+	 /**
+     * @Route("/api/PaiementActeurs/Mpl/PrixAchatMpl", name="prixAchat")
+     */
+	public function prixAchatAction(Request $request){
+		  
+		return new JsonResponse("prix achat");
+	}
 }

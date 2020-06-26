@@ -1,0 +1,331 @@
+{% extends "base.html.twig" %}
+{% block body %}
+	<header>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light ">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse div-right " id="navbarTogglerDemo01">
+				<img class="logo" src="{{asset('assets/logos/las3dlogo.png')}}"/>
+				<div class="container-fluid">
+					<div class="row ul-right">
+
+						<ul class="nav navbar-nav ">
+							<li class="nav-item ">
+								<a class="nav-link" href="{{path('homepage')}}">Accueil
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="{{path('societe')}}">Société</a>
+							</li>
+							<li class="nav-item">
+								<a class="active nav-link" href="#">Prestations</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="{{path('contact')}}">Contact</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+	</header>
+	<main>
+		<div id="carouselExampleIndicators" class="" data-ride="carousel">
+		
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="{{asset('assets/images/abg07.jpg')}}" alt="First slide">
+					<div class="carousel-caption d-none d-md-block">
+						<a href="#accueil-section2">
+							<img class="scroll-animation" src="{{asset('assets/icons/scroll.png')}}"/>
+						</a>
+					</div>
+					<div class="carousel-caption d-none d-md-block">
+						<h1 class="nav-title">Société d’externalisation à Madagascar spécialisée dans le traitement des données topographiques et de la Modélisation 3D</h1>
+					</div>
+					<div class="carousel-caption d-none d-md-block ">
+						<h5 class="title-block">Des prestations fournies par et pour les Géomètres Experts et Architectes.</h5>
+						<p class="main-title">LAS 3D</p>
+						<div class="center-button">
+							<button type="button" class="btn btn-main">DEMANDER VOTRE DEVIS</button>
+							<button type="button" class="btn btn-main">EN SAVOIR PLUS</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+
+		<div class="section1">
+			<div class="container text-center">
+				<h1 class="heading-1 main-title" data-aos="fade-down" data-aos-duration="2000">PLANS TOPOGRAPHIQUES</h1>
+
+				<p class="para-1" data-aos='fade-left'>
+					A partir de vos données LIDAR (scanner dynamique ou photogrammétrie par drone, …) ou traditionnelles ou orthophotographie,
+															 nous établissons des Plans topographiques 2D et/ou 3D avec précision et à l’échelle demandée.
+				</p>
+			</div>
+		</div>
+		<div class="section2" id="accueil-section2">
+			<div class="container-fluid card">
+				<div class="row">
+					<div class="col-md-5 title-a" data-aos='fade-up' data-aos-duration="1000">
+						<img class="img-responsive" width="100%" src="{{asset('assets/images/plan.jpg')}}"/>
+					</div>
+					<div class="col-md-7">
+						<div class="container-fluids" data-aos='fade-down' data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+							<p>
+								Représentation graphique d’un terrain ou corps de rue en restituant ses caractéristiques et les existants : voirie,
+																								 marquages au sol, bâtiment, réseaux en affleurement, talus, points de nivellement, …
+							</p>
+							<p>
+								Nos missions : Plan topo 2D et/ou 3D | Plan de Corps de Rue | Carto 200 | 
+																									Calcul de cubature | Profil en long | Profil en travers | Courbe de niveau
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section 1-->
+		<div class="section1">
+			<div class="container text-center">
+				<h1 class="heading-1 main-title" data-aos="fade-down" data-aos-duration="2000">PLANS ARCHITECTURAUX</h1>
+
+				<p class="para-1" data-aos='fade-left'>
+					A partir de vos nuages de points acquise avec un scanner statique ou dynamique ou par
+					 relevé architecturaux par drone (façades et toiture), nous réalisons des Plans supports à votre 
+					expertise dans la compréhension et le respect des enjeux juridiques et techniques de vos projets.
+				</p>
+			</div>
+			<div class='section-realisation'>
+				<div
+					class='container-fluid'>
+					<!--gallery1-->
+					<div class="row" data-aos='zoom-in-up' data-aos-duration="1000">
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<a href="/w3images/lights.jpg">
+									<img data-aos='zoom-in' data-aos-duration="2000" class='image' src="{{asset('assets/images/img1.jpg')}}" alt="Lights" style="width:100%">
+									<div class="caption">
+										<p></p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<a href="/w3images/nature.jpg">
+									<img data-aos='zoom-in' data-aos-duration="2000" class='image' src="{{asset('assets/images/img2.jpg')}}" alt="Nature" style="width:100%">
+									<div class="caption">
+										<p></p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<a href="/w3images/fjords.jpg">
+									<img data-aos='zoom-in' data-aos-duration="2000" class='image' src="{{asset('assets/images/img1.jpg')}}" alt="Fjords" style="width:100%">
+									<div class="caption">
+										<p></p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--gallery2-->
+					<div class="row" data-aos='zoom-in-up' data-aos-duration="1000">
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<a href="/w3images/lights.jpg">
+									<img data-aos='zoom-in' data-aos-duration="2000" class='image' src="{{asset('assets/images/img2.jpg')}}" alt="Lights" style="width:100%">
+									<div class="caption">
+										<p></p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<a href="/w3images/nature.jpg">
+									<img data-aos='zoom-in' data-aos-duration="2000" class='image' src="{{asset('assets/images/img1.jpg')}}" alt="Nature" style="width:100%">
+									<div class="caption">
+										<p></p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<a href="/w3images/fjords.jpg">
+									<img data-aos='zoom-in' class='image' src="{{asset('assets/images/img2.jpg')}}" alt="Fjords" style="width:100%">
+									<div class="caption">
+										<p></p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section 1-->
+		<div class="section1">
+			<div class="container text-center">
+				<h1 class="heading-1 main-title" data-aos="fade-down" data-aos-duration="2000">ETAT DES SURFACES</h1>
+
+				<p class="para-1" data-aos='fade-left'>
+					Constituant l’ensemble des surfaces réglementaires et/ou contractuelles, LAS 3D produit les documents essentiels pour le calcul 
+					des surfaces d’où les plans de présentations spécifiques et les tableaux récapitulatifs.
+				</p>
+			</div>
+		</div>
+	
+		<!-- section 1-->
+		<div class="section1">
+			<div class="container text-center">
+				<h1 class="heading-1 main-title" data-aos="fade-down" data-aos-duration="2000">SURFACES REGLEMENTAIRES</h1>
+			</div>
+			<div class='section-realisation'>
+				<div
+					class='container'>
+					<!--gallery1-->
+					<div class="row" data-aos='zoom-in-up' data-aos-duration="1000">
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<a href="/w3images/lights.jpg">
+									<img data-aos='zoom-in' data-aos-duration="2000" class='image' src="{{asset('assets/images/img1.jpg')}}" alt="Lights" style="width:100%">
+									<div class="caption">
+										<p></p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<a href="/w3images/nature.jpg">
+									<img data-aos='zoom-in' data-aos-duration="2000" class='image' src="{{asset('assets/images/img2.jpg')}}" alt="Nature" style="width:100%">
+									<div class="caption">
+										<p></p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<a href="/w3images/fjords.jpg">
+									<img data-aos='zoom-in' data-aos-duration="2000" class='image' src="{{asset('assets/images/img1.jpg')}}" alt="Fjords" style="width:100%">
+									<div class="caption">
+										<p></p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section 1-->
+		<div class="section1">
+			<div class="container text-center">
+				<h1 class="heading-1 main-title" data-aos="fade-down" data-aos-duration="2000">SURFACES CONTRACTUELLES</h1>
+			</div>
+			<div class='section-realisation'>
+				<div
+					class='container'>
+					<!--gallery1-->
+					<div class="row" data-aos='zoom-in-up' data-aos-duration="1000">
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<a href="/w3images/lights.jpg">
+									<img data-aos='zoom-in' data-aos-duration="2000" class='image' src="{{asset('assets/images/img1.jpg')}}" alt="Lights" style="width:100%">
+									<div class="caption">
+										<p></p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<a href="/w3images/nature.jpg">
+									<img data-aos='zoom-in' data-aos-duration="2000" class='image' src="{{asset('assets/images/img2.jpg')}}" alt="Nature" style="width:100%">
+									<div class="caption">
+										<p></p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="thumbnail">
+								<a href="/w3images/fjords.jpg">
+									<img data-aos='zoom-in' data-aos-duration="2000" class='image' src="{{asset('assets/images/img1.jpg')}}" alt="Fjords" style="width:100%">
+									<div class="caption">
+										<p></p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section 5-->
+		<div class="section5">
+			<div class="container-fluid">
+				<div class="d-flex justify-content-center">
+					<div class="d-flex flex-column">
+						<h1 class="heading-1" style="text-align: center; color:white; font-weight: bold" data-aos='flip-down' data-aos-duration="1000">LAS 3D</h1>
+						<p class="para" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">Pour plus de qualité, plus d’efficacité et plus de productivité à moindre coût !
+						</p>
+						<button class='bordered' data-aos='fade-left' data-aos-duration="1000">DEMANDER VOTRE DEVIS</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section4 bg-dark footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4" data-aos='zoom-in-up' data-aos-duration="1000">
+						<img class='logo-pm' src="{{asset('assets/logos/geolocalisation.png')}}"/>
+						<p class="white">LAS 3D</p>
+						<p class="white">83 BA Ampitatafika</p>
+						<p class="white">102 Antananarivo - Madagascar</p>
+					</div>
+					<div class="col-md-4" data-aos='zoom-in-up' data-aos-duration="1000">
+						<img class='logo-pm' src="{{asset('assets/logos/email-logo.png')}}"/>
+						<p class="white">contact@las3d.com</p>
+						<p class="white"></p>
+						<p class="white">Mention legal | © 2020</p>
+					</div>
+					<div class="col-md-4" data-aos='zoom-in-up' data-aos-duration="500">
+						<img class="logo-gm" src="{{asset('assets/logos/las3dlogo.png')}}"/>
+						<div class='row'>
+							<div class='col-md-3'>
+								<img class="logo-m" src="{{asset('assets/logos/fb.png')}}"/>
+							</div>
+							<div class='col-md-3'>
+								<img class="logo-m" src="{{asset('assets/logos/twitter.png')}}"/>
+							</div>
+							<div class='col-md-3'>
+								<img class="logo-m" src="{{asset('assets/logos/linkedin.png')}}"/>
+							</div>
+							<div class='col-md-3'>
+								<img class="logo-m" src="{{asset('assets/logos/instagram.png')}}"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</main>
+	<footer></footer>
+{% endblock %}

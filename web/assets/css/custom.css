@@ -1,0 +1,361 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Fredericka+the+Great|Righteous|Roboto+Condensed|Pacifico&display=swap');
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lato';
+}
+
+.navbar-brand{
+    font-family: "Pacifico";
+    font-size: 35px;
+    
+    color:lightcoral!important
+}
+.navbar{
+    background-color: rgba(255, 0, 255, 0.95);
+   
+}
+.nav-link{
+    font-size: 16px;
+    color: black !important;
+    margin: 16px;
+    font-family: 'Roboto Condensed';
+}
+
+.nav-link:hover{
+    color: #AACD88 !important;
+    cursor: pointer;
+}
+
+
+.menu-right-btn{
+    padding: 13px 46px;
+    background-color: white;
+    color: black
+  
+}
+.menu-right-btn:hover{
+    background-color: #00E8E8;
+}
+.site-content{
+    background-image: url('/assets/images/bg5.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+ 
+}
+.site-title, .site-content{
+    color: white;
+    font-family: "Fredericka the Great";
+}
+
+.site-title{
+    margin-top: 19%;
+    margin-bottom: 6%;
+    font-size: 80px;
+    color:white;
+    text-align: center;
+}
+.site-desc{
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    
+}
+.site-btn1{
+    margin-right: 20px;
+}
+.site-btn2{
+    margin-left: 20px;
+}
+.site-btn{
+    margin-bottom: 19%;
+}
+
+/*Section 1*/
+.section1 .heading-1{
+    margin-top: 8%;
+}
+
+
+.section1 .heading-2{
+    margin-bottom: 5%;
+    font-size: 39px;
+}
+
+.section1 .para-1{
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+
+.section1 .card-text, .para-1{
+    color: rgba(0, 0, 0, 0.59)
+}
+
+.section1{
+    margin-bottom: 0%;
+}
+
+/*section 2*/
+.section2 .container-fluid{
+    background-image: url('/assets/images/bg-6.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 6%;
+    padding-bottom: 4%;
+}
+/*section 5*/
+.section5 .container-fluid{
+    background-image: url('/assets/images/green2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    color: white;
+}
+/*section 6*/
+.section6 .container-fluid{
+    background-image: url('/assets/images/green2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+/*section 7*/
+.section7 .container-fluid{
+    background-image: url('/assets/images/green2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 80px!important;
+    padding-top: 50px;
+    padding-bottom: 4%;
+    color: white;
+}
+
+.section2 .heading-1{
+    margin-top: 20%;
+    margin-bottom: 0%;
+    width: 80%;
+    font-family: "Righteous";
+   color: whitesmoke;
+}
+
+.section2 .para{
+    color: whitesmoke;
+    margin-bottom: 7%;
+}
+.section2 .btn{
+    margin-bottom: 15%;
+    width: 30%;
+    padding: 2% 5%;
+   
+}
+.section2{
+    margin-top: 0%;
+    
+}
+
+/*section 3*/
+.section3{
+    margin-top: 8%;
+}
+
+.justify {
+    text-align: justify;
+}
+/*section 3*/
+.section4{
+    margin-top: 0%;
+
+}
+
+.section4 .row, .col-md-7, .col-md-5{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.section4 a{
+    color: lightseagreen;
+    size: 40px;
+}
+
+.section4 .para-1{
+    color: white;
+    margin-top: 8%;
+}
+
+
+@media screen and (max-width: 768px){
+    .section1 .card{
+        width: 14rem;
+    }
+    .section4 .col-md-7 img{
+        width: 350px;
+    }
+}
+
+.main-menu{
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+
+.navbar{
+    background-color: rgba(255, 255, 255, 0.90)!important;
+    height: 10%;
+	float: right;
+	text-align: right;
+}
+
+.icons{
+    width: 90%;
+}
+.nav-title{
+	color: white;
+	font-weight: bold;
+	margin-top: -28%;
+}
+
+.scroll-animation{
+    cursor: pointer;
+	margin-top: -5%;
+	animation: scroll 1s infinite;
+	 animation-timing-function: linear;
+	 animation-iteration-count: infinite;
+	  animation-play-state: running;
+}
+
+.title-block{
+	margin-top: -15%;
+}
+
+.logo{
+	width: 12%;
+}
+@keyframes scroll{
+  0% {margin-top: -10%;}
+  50% {margin-top: -5%;}
+  100% {margin-top: -10%;}
+}
+
+.ul-right{
+    float: right;
+}
+
+.nav-title{
+    font-size: larger;
+}
+.main-title{
+    font-size: 60px;
+    color: rgb(74, 138, 11)!important;
+    margin-top: -25%;
+    font-weight: bolder;
+    font-family: "Righteous";
+}
+.main-title2{
+    font-size: 50px;
+    color:  rgb(74, 138, 11)!important;
+    margin-top:  7%;
+    margin-bottom:  10%;
+    font-weight: bolder;
+    font-family: "Righteous";
+}
+
+.center-button{
+    margin-top: 8%;
+}
+
+.btn-main{
+    background-color: rgb(74, 138, 11)!important;
+    color: white;
+}
+.card{
+    margin-top: -1%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.title-a{
+    color: white;
+    font-size: xx-large;
+
+}
+
+.bordered{
+    background-color: transparent;
+    border: 3px  solid white;
+    padding: 5px;
+    color: white;
+    font-weight: bolder;
+}
+
+.bordered:hover{
+    cursor: pointer;
+}
+.white{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logo-pm{
+    width: 40px;
+}
+.logo-m{
+    width: 50px;
+}
+.logo-gm{
+    width: 210px;
+}
+.footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.image{
+    box-shadow: 1px 10px 15px gray;
+}
+.logo-white{
+    width: 200px;
+    box-shadow: 1px 10px 15px gray;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.active{
+    color: rgb(74, 138, 11)!important;
+   
+   
+}
+
+.atout-text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cards{
+    padding: 10px;
+    padding-top: 20px;
+    padding-right: 20px;
+    box-shadow: 1px 1px 2px gray;
+    
+}
+.card-blue{
+    background-color: lightseagreen;
+}
+
+.row-margin{
+    margin-bottom: 20px;
+}
+
+.title-4{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.profil{
+    box-shadow: 1px 2px 5px grey;
+    margin-bottom: 20px;
+}

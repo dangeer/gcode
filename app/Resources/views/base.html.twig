@@ -2,46 +2,61 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
+		<link rel="icon" href="{{asset('assets/icons/logo.jpg')}}">
 		<title>
-			{% block title %}G-CODE
+			{% block title %}
+				LAS 3D
 			{% endblock %}
 		</title>
-		{% block stylesheets %}
-			<!-- custom css -->
-			<link	rel='stylesheet' href="{{ asset('assets/css/fabien.css')}}"/>
-			<!-- bootstrap css -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<!-- material -->
 
-			<!-- Font Awesome -->
-	
-		{% endblock %}
-	
+		<!-- image csss -->
+		<link
+		rel="stylesheet" href="{{asset('assets/css/image.css')}}"/>
+		<!-- custom csss -->
+		<link
+		rel="stylesheet" href="{{asset('assets/css/custom.css')}}"/>
+
+		<!-- bootstrap css -->
+		<link rel="stylesheet" href="{{asset('assets/dist/css/bootstrap.min.css')}}"> {% block stylesheets %}{% endblock %}
+
+		<!-- aos csss -->
+		<link rel="stylesheet" href="{{asset('assets/css/aos.css')}}"/>
 
 	</head>
 	<body>
 		{% block body %}{% endblock %}
-		{% block javascripts %}
-			    <!-- js-->
-       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script>
-            ScrollReveal().reveal('.site-content .d-flex',{delay: 300});
-            ScrollReveal().reveal('.section1 .card',{delay: 500});
-            ScrollReveal().reveal('.section2 .d-flex',{delay: 500});
-            ScrollReveal().reveal('.section3 .m-2',{delay: 500});
-            ScrollReveal().reveal('.section4 .col-md-7',{delay: 500});
-            ScrollReveal().reveal('.section4 .col-md-5',{delay: 500});
+		<script src="{{asset('assets/dist/js/jquery.min.js')}}"></script>
+		<script src="{{asset('assets/dist/js/bootstrap.min.js')}}"></script>
+		<script src="{{asset('assets/js/materialize.js')}}"></script>
+		<script src="{{asset('assets/js/carousel.js')}}"></script>
+		<script src="{{asset('assets/js/aos.js')}}"></script>
 
-        </script>
+
+		{% block javascripts %}
+			<script>
+				$(document).ready(function () {
+AOS.init();
+// Add smooth scrolling to all links
+$("a").on('click', function (event) { // Make sure this.hash has a value before overriding default behavior
+if (this.hash !== "") { // Prevent default anchor click behavior
+event.preventDefault();
+
+// Store hash
+var hash = this.hash;
+
+// Using jQuery's animate() method to add smooth page scroll
+// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+$('html, body').animate({
+scrollTop: $(hash).offset().top
+}, 800, function () { // Add hash (#) to URL when done scrolling (default click behavior)
+window.location.hash = hash;
+});
+} // End if
+});
+});
+			</script>
+
 		{% endblock %}
 	</body>
 </html>
