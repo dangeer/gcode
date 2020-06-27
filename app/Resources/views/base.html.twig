@@ -8,8 +8,9 @@
 				LAS 3D
 			{% endblock %}
 		</title>
-		<!-- material -->
-
+		
+	<!-- aos csss -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<!-- image csss -->
 		<link
 		rel="stylesheet" href="{{asset('assets/css/image.css')}}"/>
@@ -21,18 +22,19 @@
 		<link rel="stylesheet" href="{{asset('assets/dist/css/bootstrap.min.css')}}"> {% block stylesheets %}{% endblock %}
 
 		<!-- aos csss -->
-		<link rel="stylesheet" href="{{asset('assets/css/aos.css')}}"/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	</head>
 	<body>
 		{% block body %}{% endblock %}
 		<script src="{{asset('assets/dist/js/jquery.min.js')}}"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="{{asset('assets/dist/js/bootstrap.min.js')}}"></script>
 		<script src="{{asset('assets/js/materialize.js')}}"></script>
 		<script src="{{asset('assets/js/carousel.js')}}"></script>
 		<script src="{{asset('assets/js/dropdown.js')}}"></script>
 		<script src="{{asset('assets/js/collapsible.js')}}"></script>
-		<script src="{{asset('assets/js/aos.js')}}"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
 		{% block javascripts %}
