@@ -4,9 +4,9 @@
 parameters:
     database_host: sql7.freemysqlhosting.net
     database_port: 3306
-    database_name: sql7350841
-    database_user: sql7350841
-    database_password: 52ejCJLcFL
+    database_name: sql7354585
+    database_user: sql7354585
+    database_password: QbMdsCEjiX
     # You should uncomment this if you want to use pdo_sqlite
     #database_path: '%kernel.project_dir%/var/data/data.sqlite'
 
