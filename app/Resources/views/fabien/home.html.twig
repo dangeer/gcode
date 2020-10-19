@@ -1,13 +1,67 @@
 {% extends "base.html.twig" %}
+
 {% block body %}
+	<div class="modal" id="modal" tabindex="999" role="dialog">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+				   <div class="container">
+					<h5 class="modal-title">DEMANDER VOTRE DEVIS</h5>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+							<div class="container">
+						<div class="row">
+								<div class="col-md-8">
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nom">
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Adresse">
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Vore Société ">
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Téléphone">
+									</div>
+									<div class="form-group">
+										<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<textArea placeholder="Message" class="form-control"></textArea>
+									</div>
+									<div class="form-group">
+										<label for="exampleFormControlFile1">Pièce jointe</label>
+										<input type="file" class="form-control-file" id="exampleFormControlFile1">
+									</div>
+								</div>
+								<div class="col-md-4">
+								<img class="img-fluid" src="{{asset('assets/logos/logo.png')}}"/>
+								</div>
+							</div>
+						</div>
+
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success">Envoyer</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<header>
 		<nav class="navbar fixed-top navbar-expand-lg navbar-light ">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-			<div class="collapse navbar-collapse div-right " >
-				<img class="logo" src="{{asset('assets/logos/las3dlogo.png')}}"/>
+				<img class="logo-min" src="{{asset('assets/logos/logo.png')}}"/>
+			<div class="collapse navbar-collapse div-right ">
 				<div class="container-fluid">
 					<div class="row ul-right">
 
@@ -26,7 +80,7 @@
 							<li class="nav-item">
 								<a class="nav-link" href="{{path('contact')}}">Contact</a>
 							</li>
-							
+
 						</ul>
 					</div>
 				</div>
@@ -56,7 +110,7 @@
 						<h5 class="title-block">Des prestations fournies par et pour les Géomètres Experts et Architectes.</h5>
 						<p class="main-title">LAS 3D</p>
 						<div class="center-button">
-							<button type="button" class="btn btn-main">DEMANDER VOTRE DEVIS</button>
+							<button type="button" class="btn btn-main Devis" >DEMANDER VOTRE DEVIS</button>
 							<button type="button" class="btn btn-main">EN SAVOIR PLUS</button>
 						</div>
 					</div>
@@ -75,7 +129,7 @@
 						<h5 class="title-block">Des prestations fournies par et pour les Géomètres Experts et Architectes.</h5>
 						<p class="main-title">LAS 3D</p>
 						<div class="center-button">
-							<button type="button" class="btn btn-main">DEMANDER VOTRE DEVIS</button>
+							<button type="button" class="btn btn-main Devis" >DEMANDER VOTRE DEVIS</button>
 							<button type="button" class="btn btn-main">EN SAVOIR PLUS</button>
 						</div>
 
@@ -95,7 +149,7 @@
 						<h5 class="title-block">Des prestations fournies par et pour les Géomètres Experts et Architectes.</h5>
 						<p class="main-title">LAS 3D</p>
 						<div class="center-button">
-							<button type="button" class="btn btn-main">DEMANDER VOTRE DEVIS</button>
+							<button type="button" class="btn btn-main Devis" >DEMANDER VOTRE DEVIS</button>
 							<button type="button" class="btn btn-main">EN SAVOIR PLUS</button>
 						</div>
 					</div>
@@ -120,11 +174,11 @@
 						<div class="container-fluids" data-aos='fade-down' data-aos-easing="ease-out-cubic" data-aos-duration="1000">
 							<p>
 								L’avancé technologique continue de se remonter en flèche et apporte 
-																																																																																																																				considérablement ses charités dans la profession des Géomètres – Topographes. 
-																																																																																																																				L’acquisition des données, que ce soient de grande quantité, 
-																																																																																																																				devient de plus en plus rapide. Relativement, l’équipe effectuant le traitement de
-																																																																																																																				 données qui reste une tâche compliquée, doit se développer en ressource humaine pour 
-																																																																																																																				 être en adéquation avec l’envergure des données afin de répondre à la satisfaction client
+																																																																																																																																																																												considérablement ses charités dans la profession des Géomètres – Topographes. 
+																																																																																																																																																																												L’acquisition des données, que ce soient de grande quantité, 
+																																																																																																																																																																												devient de plus en plus rapide. Relativement, l’équipe effectuant le traitement de
+																																																																																																																																																																												 données qui reste une tâche compliquée, doit se développer en ressource humaine pour 
+																																																																																																																																																																												 être en adéquation avec l’envergure des données afin de répondre à la satisfaction client
 							</p>
 							<p>
 								LAS 3D se spécialise ainsi dans le traitement des données topographiques pour en faciliter tout en joignant innovation technique, ressources humaines et maitrise juridique
@@ -132,8 +186,8 @@
 							</p>
 							<p>
 								D’un autre angle de vue, en répondant aux critères commerciaux exigés
-																																																																																																					 par les Géomètres Experts, LAS 3D s’engage de vous rendre plus compétitif sur le marché économique et de vous donner l’opportunité d’augmenter votre volume d’affaire, en offrant une excellente qualité de rendus, en répondant à vos commandes de masses sur une bref durée de réalisation, 
-																																																																																																					en faisant face aux enjeux des néo-technologies et en vous proposant le moindre coût de prestation.
+																																																																																																																																																													 par les Géomètres Experts, LAS 3D s’engage de vous rendre plus compétitif sur le marché économique et de vous donner l’opportunité d’augmenter votre volume d’affaire, en offrant une excellente qualité de rendus, en répondant à vos commandes de masses sur une bref durée de réalisation, 
+																																																																																																																																																													en faisant face aux enjeux des néo-technologies et en vous proposant le moindre coût de prestation.
 							</p>
 						</div>
 					</div>
@@ -147,7 +201,7 @@
 
 				<p class="para-1" data-aos='fade-left'>
 					En offshore depuis Madagascar, LAS 3D est le partenaire de la réussite de ses clients !
-																																								Découvrez quelques-uns des projets réalisés par nos équipes.
+																																																																											Découvrez quelques-uns des projets réalisés par nos équipes.
 
 				</p>
 			</div>
@@ -159,7 +213,7 @@
 						<div class="col-md-4">
 							<div class="thumbnail">
 								<a href="/w3images/lights.jpg">
-									<img data-aos='zoom-in' data-aos-duration="2000"  class='image' src="{{asset('assets/images/images.jpg')}}" alt="Lights" style="width:100%">
+									<img data-aos='zoom-in' data-aos-duration="2000" class='image' src="{{asset('assets/images/images.jpg')}}" alt="Lights" style="width:100%">
 									<div class="caption">
 										<p></p>
 									</div>
@@ -169,7 +223,7 @@
 						<div class="col-md-4">
 							<div class="thumbnail">
 								<a href="/w3images/nature.jpg">
-									<img data-aos='zoom-in' data-aos-duration="2000"  class='image'src="{{asset('assets/images/1f.jpg')}}" alt="Nature" style="width:100%">
+									<img data-aos='zoom-in' data-aos-duration="2000" class='image' src="{{asset('assets/images/1f.jpg')}}" alt="Nature" style="width:100%">
 									<div class="caption">
 										<p></p>
 									</div>
@@ -179,7 +233,7 @@
 						<div class="col-md-4">
 							<div class="thumbnail">
 								<a href="/w3images/fjords.jpg">
-									<img data-aos='zoom-in' data-aos-duration="2000"  class='image' src="{{asset('assets/images/images.jpg')}}" alt="Fjords" style="width:100%">
+									<img data-aos='zoom-in' data-aos-duration="2000" class='image' src="{{asset('assets/images/images.jpg')}}" alt="Fjords" style="width:100%">
 									<div class="caption">
 										<p></p>
 									</div>
@@ -192,7 +246,7 @@
 						<div class="col-md-4">
 							<div class="thumbnail">
 								<a href="/w3images/lights.jpg">
-									<img data-aos='zoom-in' data-aos-duration="2000"  class='image' src="{{asset('assets/images/1f.jpg')}}" alt="Lights" style="width:100%">
+									<img data-aos='zoom-in' data-aos-duration="2000" class='image' src="{{asset('assets/images/1f.jpg')}}" alt="Lights" style="width:100%">
 									<div class="caption">
 										<p></p>
 									</div>
@@ -202,7 +256,7 @@
 						<div class="col-md-4">
 							<div class="thumbnail">
 								<a href="/w3images/nature.jpg">
-									<img data-aos='zoom-in' data-aos-duration="2000"  class='image' src="{{asset('assets/images/images.jpg')}}" alt="Nature" style="width:100%">
+									<img data-aos='zoom-in' data-aos-duration="2000" class='image' src="{{asset('assets/images/images.jpg')}}" alt="Nature" style="width:100%">
 									<div class="caption">
 										<p></p>
 									</div>
@@ -212,7 +266,7 @@
 						<div class="col-md-4">
 							<div class="thumbnail">
 								<a href="/w3images/fjords.jpg">
-									<img data-aos='zoom-in'  class='image' src="{{asset('assets/images/1f.jpg')}}" alt="Fjords" style="width:100%">
+									<img data-aos='zoom-in' class='image' src="{{asset('assets/images/1f.jpg')}}" alt="Fjords" style="width:100%">
 									<div class="caption">
 										<p></p>
 									</div>
@@ -228,11 +282,10 @@
 			<div class="container-fluid">
 				<div class="d-flex justify-content-center">
 					<div class="d-flex flex-column">
-						<h1 class="heading-1" style="text-align: center; color:white; font-weight: bold" 
-						data-aos='flip-down' data-aos-duration="1000">LAS 3D</h1>
+						<h1 class="heading-1" style="text-align: center; color:white; font-weight: bold" data-aos='flip-down' data-aos-duration="1000">LAS 3D</h1>
 						<p class="para" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">Pour plus de qualité, plus d’efficacité et plus de productivité à moindre coût !
 						</p>
-						<button class='bordered' data-aos='fade-left' data-aos-duration="1000">DEMANDER VOTRE DEVIS</button>
+						<button class='bordered Devis' data-aos='fade-left' data-aos-duration="1000">DEMANDER VOTRE DEVIS</button>
 					</div>
 				</div>
 			</div>
@@ -241,19 +294,26 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4" data-aos='zoom-in-up' data-aos-duration="1000">
-						<img class='logo-pm' src="{{asset('assets/logos/geolocalisation.png')}}"/>
-						<p class="white">LAS 3D</p>
-						<p class="white">83 BA Ampitatafika</p>
-						<p class="white">102 Antananarivo - Madagascar</p>
+						<h5 class="white">Contactez-nous</h5>
+						<p class="white">Adresse : 0708 G 55 Ter Ambohimena
+						</p>
+						<p class="white">Sud, Route d’Ambositra, Antsirabe 110</p>
+						<p class="white">Téléphone : +261 34 33 734 73</p>
+						<p class="white">Email :
+							<span class="green">contacte@las-3d.com</span>
+						</p>
 					</div>
 					<div class="col-md-4" data-aos='zoom-in-up' data-aos-duration="1000">
-						<img class='logo-pm' src="{{asset('assets/logos/email-logo.png')}}"/>
-						<p class="white">contact@las3d.com</p>
-						<p class="white"></p>
-						<p class="white">Mention legal | © 2020</p>
+						<p class="white">LAS 3D – En savoir plus</p>
+						<p class="white justify">LAS 3D est la Société d’externalisation à Madagascar spécialisée dans le traitement des données géographiques et de la Modélisation 3D.</p>
+						<p class="white">Surpassez vos limites d’action commerciale.
+							Valorisez vos nouvelles technologies.
+							Réduisez vos prix de prestations.
+						</p>
+						<p class="white">Avec une équipe de talents passionnés qui vous rend plus compétitif sur votre marché national</p>
 					</div>
-					<div class="col-md-4" data-aos='zoom-in-up' data-aos-duration="500">
-						<img class="logo-gm" src="{{asset('assets/logos/las3dlogo.png')}}"/>
+					<div class="col-md-4 div-center" data-aos='zoom-in-up' data-aos-duration="500">
+						<img class="logo-gm down" src="{{asset('assets/logos/logo.png')}}"/>
 						<div class='row'>
 							<div class='col-md-3'>
 								<img class="logo-m" src="{{asset('assets/logos/fb.png')}}"/>
@@ -276,5 +336,18 @@
 
 	</main>
 	<footer></footer>
-{% endblock %}
+	<script src="{{asset('assets/dist/js/jquery.min.js')}}"></script>
+	<script src="{{asset('assets/dist/js/bootstrap.min.js')}}"></script>
+	<script>
+		$(document).ready(function () {
+$('.modal').modal({dismissible: true});
+$('.Devis').click(function () {
+$('#modal').modal('open');
+})
+$('.close').click(function () {
+$('#modal').modal('close');
+})
 
+})
+	</script>
+{% endblock %}

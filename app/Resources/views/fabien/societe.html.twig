@@ -1,5 +1,58 @@
 {% extends "base.html.twig" %}
 {% block body %}
+	<div class="modal" id="modal" tabindex="999" role="dialog">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					 <div class="container">
+					<h5 class="modal-title">DEMANDER VOTRE DEVIS</h5>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+							<div class="container">
+						<div class="row">
+								<div class="col-md-8">
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nom">
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Adresse">
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Vore Société ">
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Téléphone">
+									</div>
+									<div class="form-group">
+										<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<textArea placeholder="Message" class="form-control"></textArea>
+									</div>
+									<div class="form-group">
+										<label for="exampleFormControlFile1">Pièce jointe</label>
+										<input type="file" class="form-control-file" id="exampleFormControlFile1">
+									</div>
+								</div>
+								<div class="col-md-4">
+								<img class="img-fluid" src="{{asset('assets/logos/logo.png')}}"/>
+								</div>
+							</div>
+						</div>
+
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success">Envoyer</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<header>
 		<nav class="navbar fixed-top navbar-expand-lg navbar-light ">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,7 +60,7 @@
 			</button>
 
 			<div class="collapse navbar-collapse div-right " id="navbarTogglerDemo01">
-				<img class="logo" src="{{asset('assets/logos/las3dlogo.png')}}"/>
+				<img class="logo-min" src="{{asset('assets/logos/logo.png')}}"/>
 				<div class="container-fluid">
 					<div class="row ul-right">
 
@@ -52,7 +105,7 @@
 						<h5 class="title-block">Des prestations fournies par et pour les Géomètres Experts et Architectes.</h5>
 						<p class="main-title">LAS 3D</p>
 						<div class="center-button">
-							<button type="button" class="btn btn-main">DEMANDER VOTRE DEVIS</button>
+							<button type="button" class="btn btn-main Devis">DEMANDER VOTRE DEVIS</button>
 							<button type="button" class="btn btn-main">EN SAVOIR PLUS</button>
 						</div>
 					</div>
@@ -87,7 +140,7 @@
 						</div>
 					</div>
 					<div data-aos='fade-up' data-aos-duration="1000">
-						<img class='logo-white' src="{{asset('assets/icons/logo.png')}}"/>
+						<img class='logo-white' src="{{asset('assets/images/plan1.jpg')}}"/>
 					</div>
 				</div>
 			</div>
@@ -123,7 +176,7 @@
 
 		<div class="section1">
 			<div class="container text-center">
-				<h1 class="heading-2 main-title2" data-aos="fade-down" data-aos-duration="2000">NOS ATOUTS</h1>
+				<h1 class="heading-2 main-title2" data-aos="fade-down" data-aos-duration="2000">NOS VALEURS</h1>
 			</div>
 		</div>
 
@@ -133,15 +186,80 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="container-fluids" data-aos='fade-down' data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-								<p class='atout-text'>Meilleur rapport Qualité-Prix</p>
-								<p class='atout-text'>Maitrise des enjeux juridiques et technique des projets</p>
-								<p class='atout-text'>TIMING</p>
+								<p class='atout-text green'>Passion</p>
+								<p class='atout-text justify'>La passion, c’est le cœur de l’ADN des équipes de LAS 3D permettant de dépasser nos limites 
+								pour atteindre l’excellence. C’est l’élément essentiel à l’expression de nos talents.</p>
 							</div>
 						</div>
 						<div class="col-md-6" data-aos='fade-up' data-aos-duration="1000">
-							<p class='atout-text'>Professionnalisme</p>
-							<p class='atout-text'>Equipe performante</p>
+							<p class='atout-text green'>Talent</p>
+							<p class='atout-text justify'>Passionné, innovateur et expert, nos équipes expriment à toutes épreuves leurs talents pour 
+							atteindre l’objectif de satisfaire notre clientèle. Ce qui valorise notre esprit d’équipe.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="container-fluids" data-aos='fade-down' data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+								<p class='atout-text green'>Esprit d’équipe</p>
+								<p class='atout-text justify'>Focalisés sur un même objectif d’atteindre la satisfaction client, formés de travailler en équipe, avec leurs talents et savoir-faire, nos collaborateurs développent constamment un esprit d’équipe ingénieux. 
+								Ce dernier qui nous permet d’assurer l’uniformité et la rapidité dans notre production.</p>
+							</div>
+						</div>
+						<div class="col-md-6" data-aos='fade-up' data-aos-duration="1000">
+							<p class='atout-text green'>Conscience professionnelle</p>
+							<p class='atout-text justify'>Nos ingénieurs, géomètres topographes et architectes ont la conscience de tous les enjeux dans nos missions, que ce soient juridiques, techniques ou sur le timing. C’est la valeur
+							 que nous avons investie pour avoir une excellente qualité de rendu sur une courte durée de production.</p>
+						</div>
+					</div>
+					<div class="row">
+					<div class="container">
+							<div class="container-fluids center" data-aos='fade-down' data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+								<p class='atout-text green center'>Excellence</p>
+								<p class='atout-text justify'>A la recherche permanente d’une excellente qualité de service et d’un excellent rendement. L’excellence, c’est l’image 
+								que LAS 3D veut toujours avoir aux yeux de ses clients.</p>
+							</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				<div class="section1">
+			<div class="container text-center">
+				<h1 class="heading-2 main-title2" data-aos="fade-down" data-aos-duration="2000">NOS ATOUTS</h1>
+				<p class='center'>Ils nous permettent d’établir un climat de confiance mutuelle dans une relation gagnant-gagnant avec nos clients afin de parvenir sur une collaboration à long terme.</p>
+			</div>
+		</div>
 
+		<div class="section5" id="accueil-section2">
+			<div class="container-fluid card">
+				<div class='container'>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="container-fluids" data-aos='fade-down' data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+								<p class='atout-text green'>Meilleur ratio Qualité/Prix</p>
+								<p class='atout-text justify'>Un maximum de qualité des rendus avec un minimum de coût de production.</p>
+							</div>
+						</div>
+						<div class="col-md-6" data-aos='fade-up' data-aos-duration="1000">
+							<p class='atout-text green'>Privilège</p>
+							<p class='atout-text justify'>Nos clients sont privilégiés d’une offre compétitive sur leurs marchés nationaux et avoir l’opportunité d’accroitre leur volume 
+							d’affaire en ne limitant pas leurs actions commerciales.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="container-fluids" data-aos='fade-down' data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+								<p class='atout-text green'>Professionnalisme</p>
+								<p class='atout-text justify'>Maitrise des enjeux juridiques et technique des projets.</p>
+							<p class='atout-text justify'>Méthode de travail bien structurée</p>
+							<p class='atout-text justify'>Excellente qualité de service dans une courte durée de production</p>
+							<p class='atout-text justify'>Stricte respect du délai de production.</p>
+							</div>
+						</div>
+						<div class="col-md-6" data-aos='fade-up' data-aos-duration="1000">
+							<p class='atout-text green'>Engagement</p>
+							<p class='atout-text justify'>Respect et honnêteté envers nos clients qui nous ont accordé leurs confiances</p>
+							<p class='atout-text justify'>Communication en temps réel avec nos clients à chaque étape du traittement.</p>
 						</div>
 					</div>
 				</div>
@@ -332,76 +450,30 @@
 			</div>
 		</div>
 
-		<!-- section 1-->
-		<div class="section1">
-			<div class="container text-center">
-				<h1 class="heading-1 main-title" data-aos="fade-down" data-aos-duration="2000">NOTRE EQUIPE</h1>
-
-			</div>
-			<div class='section-realisation'>
-				<div
-					class='container'>
-					<!--gallery1-->
-					<div class="row" data-aos='zoom-in-up' data-aos-duration="1000">
-						<div class='col-md-3'></div>
-						<div class="col-md-2">
-
-							<div class="hovereffect">
-								<img class="img-circle profil" src="{{asset('assets/images/profil2.jpg')}}" alt="Nature" style="width:100%" alt="">
-								<div class="overlay">
-									<h2>Tiana fabien heriniaina</h2>
-									<p>
-										<a>Directeur - Dessinateur</a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2">
-
-							<div class="hovereffect">
-								<img class="img-responsive profil" src="{{asset('assets/images/profil2.jpg')}}" alt="Nature" style="width:100%" alt="">
-								<div class="overlay">
-									<h2>Tiana fabien heriniaina</h2>
-									<p>
-										<a>Directeur - Dessinateur</a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2">
-
-							<div class="hovereffect">
-								<img class="img-responsive profil" src="{{asset('assets/images/profil2.jpg')}}" alt="Nature" style="width:100%" alt="">
-								<div class="overlay">
-									<h2>Tiana fabien heriniaina</h2>
-									<p>
-										<a>Directeur - Dessinateur</a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class='col-md-3'></div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="section4 bg-dark footer">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4" data-aos='zoom-in-up' data-aos-duration="1000">
-						<img class='logo-pm' src="{{asset('assets/logos/geolocalisation.png')}}"/>
-						<p class="white">LAS 3D</p>
-						<p class="white">83 BA Ampitatafika</p>
-						<p class="white">102 Antananarivo - Madagascar</p>
+						<h5 class="white">Contactez-nous</h5>
+						<p class="white">Adresse : 0708 G 55 Ter Ambohimena
+						</p>
+						<p class="white">Sud, Route d’Ambositra, Antsirabe 110</p>
+						<p class="white">Téléphone : +261 34 33 734 73</p>
+						<p class="white">Email :
+							<span class="green">contacte@las-3d.com</span>
+						</p>
 					</div>
 					<div class="col-md-4" data-aos='zoom-in-up' data-aos-duration="1000">
-						<img class='logo-pm' src="{{asset('assets/logos/email-logo.png')}}"/>
-						<p class="white">contact@las3d.com</p>
-						<p class="white"></p>
-						<p class="white">Mention legal | © 2020</p>
+						<p class="white">LAS 3D – En savoir plus</p>
+						<p class="white justify">LAS 3D est la Société d’externalisation à Madagascar spécialisée dans le traitement des données géographiques et de la Modélisation 3D.</p>
+						<p class="white">Surpassez vos limites d’action commerciale.
+							Valorisez vos nouvelles technologies.
+							Réduisez vos prix de prestations.
+						</p>
+						<p class="white">Avec une équipe de talents passionnés qui vous rend plus compétitif sur votre marché national</p>
 					</div>
-					<div class="col-md-4" data-aos='zoom-in-up' data-aos-duration="500">
-						<img class="logo-gm" src="{{asset('assets/logos/las3dlogo.png')}}"/>
+					<div class="col-md-4 div-center" data-aos='zoom-in-up' data-aos-duration="500">
+						<img class="logo-gm down" src="{{asset('assets/logos/logo.png')}}"/>
 						<div class='row'>
 							<div class='col-md-3'>
 								<img class="logo-m" src="{{asset('assets/logos/fb.png')}}"/>
@@ -424,5 +496,18 @@
 
 	</main>
 	<footer></footer>
+	<script src="{{asset('assets/dist/js/jquery.min.js')}}"></script>
+	<script src="{{asset('assets/dist/js/bootstrap.min.js')}}"></script>
+	<script>
+		$(document).ready(function () {
+$('.modal').modal({dismissible: true});
+$('.Devis').click(function () {
+$('#modal').modal('open');
+})
+$('.close').click(function () {
+$('#modal').modal('close');
+})
+})
+	</script>
 {% endblock %}
 

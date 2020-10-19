@@ -236,6 +236,12 @@ body{
 .logo{
 	width: 12%;
 }
+
+
+
+.logo-min{
+    width: 5%;
+}
 @keyframes scroll{
   0% {margin-top: -10%;}
   50% {margin-top: -5%;}
@@ -358,4 +364,26 @@ body{
 .profil{
     box-shadow: 1px 2px 5px grey;
     margin-bottom: 20px;
+}
+
+.green{
+    color:green;
+    font-weight: bolder;
+}
+
+.div-center{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.down{
+    margin-bottom: 20px;
+}
+
+.justify{
+    text-align: justify;
+}
+.center{
+    text-align: center;
 }
